@@ -1,0 +1,14 @@
+Package: fastGene
+Type: Package
+Title: Convert between Mouse and Human gene symbols
+Version: 0.0.1.0
+RoxygenNote: 7.1.1.9001
+Imports:
+    devtools,
+    reticulate
+Config/reticulate:
+  list(
+    packages = list(
+      list(package = "indra", pip = TRUE)
+    )
+  )
