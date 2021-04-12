@@ -6,3 +6,4 @@
 .Rhistory
 ./scripts/mgi_to_hgnc.pyc
 ./scripts/__pycache__
+./scripts/.ipynb_checkpoints_
