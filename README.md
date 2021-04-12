@@ -1,5 +1,5 @@
 # fastGene
-# fastGene: Tool to convert Mouse gene symbols to Human equivalent gene symbols and vice versa by using [INDRA](https://github.com/sorgerlab/indra) (Integrated Network and Dynamical Reasoning Assembler) resources
+fastGene: Tool to convert Mouse gene symbols to Human equivalent gene symbols and vice versa by using [INDRA](https://github.com/sorgerlab/indra) (Integrated Network and Dynamical Reasoning Assembler) resources
 
 Install:
 ```{r}
