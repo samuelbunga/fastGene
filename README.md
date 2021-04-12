@@ -6,7 +6,7 @@ Install:
 install_github('samuelbunga/fastGene')
 ```
 
-# Run fastGene:
+Run fastGene:
 ```{r}
 mouse_genes <- c('Il6', 'Cd4')
 human_symbols <- convert_symbols(mouse_genes)
