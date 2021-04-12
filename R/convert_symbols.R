@@ -5,13 +5,17 @@
 #' @export
 #' @examples
 #' symbols <- convert_symbols(c('Il6'))
-library(reticulate)
-if('r-fastGene' %in% conda_list()[[1]]){
-  reticulate::use_condaenv('r-fastGene')
-}else{
-  conda_install('r-fastGene', packages = 'pandas')
+check_env <- function(){
+  if('r-fastGene' %in% conda_list()[[1]]){
+    reticulate::use_condaenv('r-fastGene')
+  }else{
+    reticulate::conda_install('r-fastGene', 
+                              packages = 'pandas')
+  }
 }
+
 convert_symbols <- function(gene_list){
+  check_env()
   require('reticulate')
   loc <- find.package("fastGene")
   reticulate::import('indra')
