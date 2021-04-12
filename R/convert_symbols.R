@@ -11,10 +11,10 @@ if('r-fastGene' %in% conda_list()[[1]]){
 }else{
   conda_install('r-fastGene', packages = 'pandas')
 }
-convert_symbols <- function(genes){
+convert_symbols <- function(gene_list){
   loc <- find.package("fastGene")
   reticulate::import('indra')
   mgi_to_hgnc <- import_from_path('mgi_to_hgnc', 
                                   path = paste0(loc,'/scripts'))
-  mgi_to_hgnc$convert_symbols(c(genes))
+  mgi_to_hgnc$convert_symbols(c(gene_list), loc)
 }

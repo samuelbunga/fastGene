@@ -1,3 +1,4 @@
+.fastGene/*
 .Rproj*
 .R/.DS*
 .fastGene.Rproj
@@ -5,5 +6,5 @@
 .Rbuildignore
 .Rhistory
 ./scripts/mgi_to_hgnc.pyc
-./scripts/__pycache__
+scripts/__pycache__/
 ./scripts/.ipynb_checkpoints_
