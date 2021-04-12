@@ -1,0 +1,8 @@
+.Rproj*
+.R/.DS*
+.fastGene.Rproj
+.DS_Store
+.Rbuildignore
+.Rhistory
+./scripts/mgi_to_hgnc.pyc
+./scripts/__pycache__
