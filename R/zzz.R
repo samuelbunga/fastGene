@@ -1,5 +1,5 @@
 check_env <- function(){
-  if('r-fastGene' %in% conda_list()[[1]]){
+  if('r-fastGene' %in% reticulate::conda_list()[[1]]){
     reticulate::use_condaenv('r-fastGene')
   }else{
     reticulate::conda_install('r-fastGene', 
