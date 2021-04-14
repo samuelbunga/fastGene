@@ -16,9 +16,9 @@ check_env <- function(){
                showWarnings = F)
     print('Downloading scripts...')
     system(paste0('wget https://github.com/samuelbunga/fastGene/tree/main/scripts/__init__.py -P ',
-                  home_dir,'/.fastGene/scripts/__init__.py'))
+                  home_dir,'/.fastGene/scripts/'))
     system(paste0('wget https://github.com/samuelbunga/fastGene/tree/main/scripts/mgi_to_hgnc.py -P ',
-                  home_dir,'/.fastGene/scripts/mgi_to_hgnc.py'))
+                  home_dir,'/.fastGene/scripts/'))
   }
   
 }
