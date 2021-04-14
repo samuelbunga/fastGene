@@ -7,7 +7,6 @@
 #' symbols <- convert_symbols(c('Il6'))
 convert_symbols <- function(gene_list){
   loc <- '~/.fastGene/'
-  reticulate::import('indra')
   mgi_to_hgnc <- import_from_path('mgi_to_hgnc', 
                                   path = paste0(loc, '/scripts'))
   mgi_to_hgnc$convert_symbols(c(gene_list), loc)

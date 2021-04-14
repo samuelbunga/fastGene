@@ -1,4 +1,14 @@
+check_env <- function(){
+  if('r-fastGene' %in% conda_list()[[1]]){
+    reticulate::use_condaenv('r-fastGene')
+  }else{
+    reticulate::conda_install('r-fastGene', 
+                              packages = 'pandas')
+  }
+}
 .onLoad <- function(libname, pkgname){
+  check_env()
+  library(reticulate)
   home_dir <- path.expand("~")
   if(dir.exists(paste0(home_dir, '/.fastGene')) == F){
     print('Creating .fastGene in home directory')
@@ -10,3 +20,4 @@
   }
   
 }
+
